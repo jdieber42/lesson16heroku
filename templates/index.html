@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Heroku Flask App</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-<body>
+{% block subtitle %}Home{% endblock subtitle %}
+
+{% block content %}
     <h1>Hello Heroku App!</h1>
 
-    <img src="/static/img/logo.png">
+    <p>Willkommen {{ namen }}, auf unserer neuen Seite!!</p>
 
-</body>
-</html>
+    <p>Heute ist: {{ datum_today }} </p>
+
+    <img src="/static/img/logo.png">
+{% endblock content %}

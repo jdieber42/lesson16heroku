@@ -17,4 +17,10 @@
             Sorry we do not have any authors yet!!!!
         </p>
     {% endif %}
+
+    <form method="post" action="/about">
+        <input type="text" name="author" placeholder="Please enter the author name.">
+
+        <input type="submit" value="Add Author">
+    </form>
 {% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block subtitle %}Home{% endblock subtitle %}
+
+{% block content %}
+    <h1>Set your cookie</h1>
+
+    <p>Your current cookie value is: <b>{{ cookie_value }}</b>   <a href="/set_cookie?action=delete">Delete Cookie</a></p>
+
+    <form method="post" action="/set_cookie">
+        <input type="text" name="cookie">
+
+        <input type="submit" name="Set Cookie">
+    </form>
+
+{% endblock content %}
